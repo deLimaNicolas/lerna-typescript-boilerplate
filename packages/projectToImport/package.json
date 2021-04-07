@@ -1,0 +1,40 @@
+{
+  "name": "moduleToImport",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Nicolas de Lima <nicolas.lima@awscode.com.br>",
+  "homepage": "https://github.com/deLimaNicolas/lerna-typescript-boilerplate#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deLimaNicolas/lerna-typescript-boilerplate.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start:dev": "ts-node ./src/index.ts",
+    "start:prd": "node ./dist/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/deLimaNicolas/lerna-typescript-boilerplate/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "moduleToExport": "1.0.0"
+  }
+}
